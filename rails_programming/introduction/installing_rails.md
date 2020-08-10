@@ -162,10 +162,13 @@ A message from Github stating, "The authenticity of host 'github.com'..." may ap
 
 After the terminal finishes its magic, return to your GitHub repository and refresh the page. You should see a lot of files, starting with a folder called "app".
 
-Optional. In case you run into an error, That says: ```git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.```, Not too worry, It happened because of SSH we generated in [previous lesson](https://www.theodinproject.com/courses/ruby-on-rails/lessons/preparing-for-deployment). Now follow these steps Carefully.
-Open a new terminal if you're on Linux, If you're on Windows open git bash or command prompt. Go to your root folder and do <code> cd ~/.ssh </code>
-The type <code> ls </code> you should see this files <code>id_rsa</code> and <code>id_rsa.pub</code>
-then open this folder with <code>code .</code> on Linux, <code>open .</code> on Windows, Open the file with the name <code>id_rsa.pub</code> do Ctrl+A and Ctrl+C to copy everything from this file.
+Optional. In case you run into an error, That says: ```git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.```,
+Not too worry, It happened because of SSH we generated in [previous lesson](https://www.theodinproject.com/courses/ruby-on-rails/lessons/preparing-for-deployment). Now follow these steps Carefully.
+Open a new terminal if you're on Linux, If you're on Windows open git bash or command prompt. 
+Go to your root folder and do <code> cd ~/.ssh </code>
+Then type <code> ls </code> you should see this files <code>id_rsa</code> and <code>id_rsa.pub</code>
+then open this folder with <code>code .</code> on Linux, <code>open .</code> on Windows.
+Open the file with the name <code>id_rsa.pub</code> do Ctrl+A and Ctrl+C to copy everything from this file.
 
 Then open github in your browser and go to settings (on the right top). 
 Click on SSH keys and GPG Keys tab (On the left).
